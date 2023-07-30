@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Llamar Mapita.js -->
+    <script src="Mapita.js"></script>
+    <!-- Llamar a los estilos -->
+    <link rel="stylesheet" href="AcercaDe.css">
+    <!-- Llamar al título -->
+    <title>Aerodrone Colombia</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acerca de</title>
-  <link rel="stylesheet" href="AcercaDe.css">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQWExHEIp6vaFQBcxwKs0tZ0k4FSN_EQ0&callback=initMap" async defer></script>
   <script>
  
- async function initMap() {
-  const { Map, Marker } = await google.maps.importLibrary("maps");
 
-  const centerLatLng = { lat: 4.911399172777014, lng: -73.91654363987425 };
-  const map = new Map(document.getElementById("map"), {
-    center: centerLatLng,
-    zoom: 14,
-  });
-
-  // Agregar un marcador en la ubicación del centro
-  const marker = new Marker({
-    position: centerLatLng,
-    map: map,
-    title: "Aerodrone Colombia",
-  });
-}
-
-initMap();
 
   </script>
 </head>
 <body>
   <div class="container">
     <h1 class="centered">Acerca de</h1>
-    <p class="justified centered">Le damos una cordial bienvenida al fascinante universo de los drones, un lugar en el que encontrará una extensa variedad de servicios cuidadosamente diseñados para satisfacer sus necesidades y expectativas. Explore con confianza las posibilidades que ofrecemos, confiados en que cada detalle ha sido concebido para proporcionarle una experiencia única y sobresaliente. Estamos ansiosos por acompañarle en este emocionante viaje tecnológico y ser su socio confiable en el aprovechamiento pleno de las capacidades que los drones pueden brindarle. ¡Adelante, descubra un nuevo horizonte de oportunidades con nosotros!</p>
+    <p class="justified centered">Nuestra empresa de Aerodrone Colombia se enfoca en brindar soluciones innovadoras en el ámbito de la aviación no tripulada. Nos especializamos en la creación de proyectos aéreos, incluyendo fotogrametría, mapeo de terrenos, inspecciones industriales, videografía aérea y servicios de entrega de paquetes. Además, ofrecemos asesoría especializada en el uso de drones y su integración en diversas industrias, permitiéndole maximizar su potencial y obtener resultados excepcionales. Contamos con un equipo altamente capacitado y tecnología de vanguardia, garantizando la calidad y eficiencia en cada servicio que brindamos. Confíe en DronesVision para llevar sus proyectos a nuevas alturas y alcanzar sus objetivos de manera efectiva y segura.</p>
     <h2 class="centered">Ubicación</h2>
-    <p class="justified centered">Texto de ubicación del emprendimiento de drones.</p>
+    <p class="justified centered">Los espacios utilizados en el mapa son para propositos ilustrativos y no reflejan una ubicación real de una empresa en concreto.</p>
     <div class="map-container">
       <div id="map"></div>
     </div>
