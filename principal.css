@@ -25,6 +25,9 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
+    /* Hacer que los elementos de foto sean centrados cuando están en pantalla completa */
+    justify-items: center;
+    
   }
   
   .btn {
