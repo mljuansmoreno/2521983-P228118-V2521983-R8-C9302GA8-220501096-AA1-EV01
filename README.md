@@ -2,7 +2,7 @@
 
 ![Aerodrone GIF](imagenes/imagen.gif)
 
-## Bienvenido a la versión web de la aplicación educativa Aerodrone Colombia, desarrollada con Node.js, HTML, CSS y JavaScript. Esta aplicación es parte de la evidencia GA8-220501096-AA1-EV01  del programa de formación en Análisis y Desarrollo de Sistemas de Información (ADSO) del SENA.
+## Bienvenido a la versión web de la aplicación educativa Aerodrone Colombia, desarrollada con Node.js, Angular, HTML, CSS y JavaScript. Esta aplicación es parte de la evidencia GA8-220501096-AA1-EV01  del programa de formación en Análisis y Desarrollo de Sistemas de Información (ADSO) del SENA.
 
 ### Introducción
 
