@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-about', // Check the selector
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./aboutcss.component.css']
 })
 export class AboutComponent {
-
+  // Component logic here if any
 }

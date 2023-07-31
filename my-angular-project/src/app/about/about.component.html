@@ -4,7 +4,7 @@
     <!-- Llamar Mapita.js -->
     <script src="Mapita.js"></script>
     <!-- Llamar a los estilos -->
-    <link rel="stylesheet" href="AcercaDe.css">
+    <!-- <link rel="stylesheet" href="AcercaDe.css"> -->
     <!-- Llamar al título -->
     <title>Aerodrone Colombia</title>
   <meta charset="UTF-8">
@@ -29,4 +29,62 @@
     <a href="index.html" class="btn centered">Principal</a>
   </div>
 </body>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .centered {
+    text-align: center;
+  }
+  
+  .justified {
+    text-align: justify;
+  }
+  
+  .map-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    padding-top: 90%; /* Aspect ratio 1:1 */
+  }
+  
+  #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .map-container {
+      width: 100%;
+      padding-top: 100%; /* Aspect ratio 1:1 for smaller screens */
+    }
+  }
+  
+</style>
 </html>
