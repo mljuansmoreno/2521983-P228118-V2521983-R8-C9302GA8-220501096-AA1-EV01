@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aerodrone Colombia</title>
-  <link rel="stylesheet" href="principal.css">
+  <!-- <link rel="stylesheet" href="principal.css"> -->
   <base href="/">
 </head>
 <body>
@@ -27,8 +27,60 @@
       <img src="assets/imagenes/urbano.png" alt="Servicio Urbano">
       <img src="assets/imagenes/ciudad.png" alt="Servicio de Ciudad">
     </div>
-    <a href="AcercaDe.html" class="btn">Más información</a>
-  </div>
-  
+    <a routerLink="app-about" class="btn">Más información</a> <!-- Utilizando routerLink para la ruta del componente Acerca de -->
+    </div>
+    <!-- Aún falta mejorar la funcionalidad del botón -->
 </body>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .justified-text {
+    text-align: justify;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    /* Hacer que los elementos de foto sean centrados cuando están en pantalla completa */
+    justify-items: center;
+    
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .services-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+</style>
+
+
 </html>
